@@ -16,8 +16,10 @@ $(".counter").counterUp({
     time: 2000
 });
 
-$(".navbar-toggler-icon").click(function(){
-       $("body").toggleClass("disable-scroll") 
+
+
+$(".navbar-nav>li>a").click(function(){
+   $(".navbar-collapse").collapse("hide") 
 });
 
 
