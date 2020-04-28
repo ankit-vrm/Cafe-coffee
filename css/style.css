@@ -1,0 +1,154 @@
+*{ margin: 0; padding: 0; box-sizing: border-box;}
+a{ text-decoration: none !important;}
+li{ list-style: none !important;}
+
+::selection{ background-color: #b68834; color: #fff;}
+body:focus, body:focus-within{ background-color: transparent !important;}
+
+::placeholder{ font-size: 14px;}
+.navbar{ position: fixed; top 0; left: 0; width: 100%; z-index: 1000; padding: 20px 0; margin-bottom: 4px;}
+
+.disable-scroll{ overflow: hidden;}
+
+body{ font-family: 'Poppins', sans-serif;}
+body p{ line-height: 1.625; font-weight: 300; font-size: 16px;}
+.nav-link{ color: #fff !important;}
+.nav-item:hover .nav-link{ color: #b68834 !important; border-bottom: .1px solid;}
+
+.wrap-heading{ font-size: 36px; color: #222222; line-height: 1.2; font-weight: 600;}
+.wrap-1{ background-image: url(../img/header-bg.jpg); height: 100vh; background-repeat: no-repeat; background-size: cover; background-position: center; color: #fff;}
+.wrap-1 .container-md{ position: relative;}
+.wrap-1 .navbar-nav li a{ color: #fff; margin: 0 5px; padding: 10px 15px; font-size: 14px;}
+/* .wrap-1 header{ padding: 10px 0 0; margin-bottom: 4px; background-color: rgba(0,0,0,.4);} */
+.wrap-1 .section-1 h1{ font-size: 60px; font-weight: 600; margin: 80px 0 20px;}
+
+.wrap-1 .section-1{ padding-top: 90px;}
+.wrap-1 .section-1 .buy-btn{ padding: 10px 40px; color: #000; background-color: #fff; border-radius: 40px; margin: 10px 0;}
+.wrap-1 .section-1 .buy-btn:hover{ cursor: pointer; background-color: transparent; color: #fff; border: 1px solid; transition: .5s;}
+
+
+.wrap-2{ padding: 50px 0 100px;}
+.wrap-2 .video{ position: relative;}
+.wrap-2 .video .rvideo{ opacity: .6;}
+
+
+
+.wrap-2 .video .play{ position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+.wrap-2 .video-about{ padding: 40px 100px 0 40px;}
+.wrap-2 .video-about h2{ font-size: 36px; color: #222222; line-height: 1.2; font-weight: 600;}
+.wrap-2 .video-about h6{ letter-spacing: 2px; color: #b68834; font-size: 12px; font-weight: 300;}
+.grey{ color: #777777; font-size: 14px;}
+
+.wrap-3{ background-image: url(../img/menu-bg.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; padding: 100px 0;}
+.wrap-3 .card{ position: relative; border-radius: 10px;}
+.wrap-3 .card:hover{ transform: scale(.95); cursor: pointer; box-shadow: 5px 5px 10px;}
+
+.wrap-3 .card .price{ position: absolute; right: 20px; top: 22px; color: #b68834 !important; font-size: 18px; font-weight: 600;}
+.coffee-name{ font-size: 18px; color: #222222; line-height: 1.2; font-weight: 600;}
+
+.wrap-4{ padding: 100px 0;}
+.wrap-4 .mfp-close:hover{ cursor: pointer !important;}
+.wrap-4 .grid-item:hover img{ animation: zoom-out .6s linear; transition: .4s; box-shadow: 3px 4px 10px #000;}
+
+@keyframes zoom-out{
+    0%{ transform: scale(1);}
+    50%{ transform: scale(1.05);}
+    100%{ transform: scale(1);}
+}
+
+.wrap-5{ background-color: #b68834; padding: 100px 0; color: #fff;}
+.wrap-5 .section-5 h2{ font-size: 36px;
+line-height: 1.2; font-weight: 600;}
+.wrap-5 .reviews{ padding: 0 20px;}
+.checked{ color: orange;}
+.wrap-5 .reviews p{ font-size: 14px;}
+.wrap-5 .reviews img{ display: block;}
+.wrap-5 .reviews i{ font-size: 14px; padding: 1px; margin: 1px;}
+.wrap-5 .rtitle{ display: inline-block; font-size: 18px; line-height: 1.2; font-weight: 600;}
+.wrap-5 .counters{ margin-top: 60px !important;}
+.wrap-5 .counter{ font-size: 30px; font-weight: 100; letter-spacing: 2px;}
+
+.wrap-6{ padding: 100px 0;}
+.wrap-6 .card{ border: none;}
+.wrap-6 .blog-details a{ padding: 5px 20px; border: 1px solid #7777; border-radius: 20px; font-size: 12px; color: #222; font-weight: 500;}
+.wrap-6 .blog-details a:hover{ background-color: #b68834; color: #fff; cursor: pointer; transition: .5s ease;}
+
+.wrap-6 .blog-details .card-body{ padding: 20px 5px;}
+.post-date{ color: #222; font-size: 14px; font-weight: 500;}
+
+.wrap-7{ background-image: url(../img/footer-bg.jpg); background-size: cover; background-repeat: no-repeat; background-position: center top; height:; color: #fff; padding: 100px 0;}
+
+
+.footer-content{ padding-top: 100px;}
+footer input{ padding: 5px 10px; border: none; outline: none;}
+footer input:focus{ outline: none;}
+footer button{ padding: 5px 10px; background-color: #b68834; border: none;}
+footer .social i{ margin: 0 4px; padding: 0 2px 0 0; font-size: 18px}
+footer .social i:hover{ color: #b68834; cursor: pointer; transition: .4s; transform: translateY(2px);}
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------responsive----------------------*/
+
+@media screen and (max-idth:1400px){
+    
+    .wrap-1 .section-1 h1{ margin-top: 200px;}
+}
+
+
+@media screen and (max-width:1220px){
+    
+    .wrap-1{ height: 920px;}
+    .wrap-1 .section-1{ padding-top: 80px;}
+    .wrap-1 .section-1 h1{ font-size: 52px; margin: 140px 0 20px;}
+    
+    .wrap-2 .video-about h2{ font-size: 30px;}
+    .wrap-2 .video-about .quote{ font-size: 14px;}
+    .wrap-2 .video-about{ padding: 20px 60px;}
+
+}
+
+
+@media screen and (max-width:980px){
+    body p{ font-size: 14px;}
+    .wrap-1{ background-position: center left;}
+    .wrap-1 .section-1 h1{ font-size: 48px; margin-top: 120px;}
+    .wrap-2 .video img{ width: 100%;}
+    .wrap-2 .video-about{ padding: 20px; margin-top: 20px;}
+    
+    .wrap-1 header{ background-color: rgba(0,0,0,.8);}
+    
+    #navbarSupportedContent{ text-align: center; background-color: #f0f0f0; position: absolute; top: 50px; width: 100%; z-index: 99; padding: 5% 30%;}
+     #navbarSupportedContent li a{ color: #000 !important;}
+    #navbarSupportedContent li a:hover{ color: #b68834 !important;}
+    
+    .wrap-2 .video .play{ width: 10%;}
+}
+
+
+@media screen and (max-width:760px){
+    
+     
+    .navbar{ padding: 10px !important;}
+    .wrap-heading{ font-size: 34px;}
+    .wrap-5 .section-5 h2{ font-size: 34px;}
+} 
+
+
+@media screen and (max-width:460px){
+    
+    #navbarSupportedContent{ padding: 10% 30%;}
+    .wrap-1 .section-1{ padding-top: 180px;}
+    .wrap-1 .section-1 h6{ font-size: 14px;}
+    .wrap-1 .section-1 h1{ font-size: 36px; margin: 30px 0;}
+    .wrap-4 img{ width: 100%;}
+    footer .social i{ margin: 0 5px; padding: 4px; font-size: 20px;}
+}
