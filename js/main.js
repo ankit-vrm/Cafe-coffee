@@ -1,5 +1,9 @@
 AOS.init();
 
+$(window).load(function(){
+      $("#preloader").delay(400).fadeOut ("slow");
+      $(".loader").fadeOut();
+});
 
 $(".grid").magnificPopup({
     type:"image",
