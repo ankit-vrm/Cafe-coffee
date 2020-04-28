@@ -10,6 +10,17 @@ body:focus, body:focus-within{ background-color: transparent !important;}
 
 .disable-scroll{ overflow: hidden;}
 
+#preloader{ position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: 9999; background: #fff;}
+  
+.loader{ width: 50px; height: 50px; position: absolute; top: 45%; left: 50%; border-radius: 50px; animation: loader 1s linear infinite;}
+        
+@keyframes loader{
+    0%{ transform: rotate(0deg); border: 2px solid #b68834; border-left-color: transparent;}
+    50%{ transform: rotate(180deg); border: 5px solid #b68834; border-left-color: transparent;}
+    100%{ transform: rotate(360deg); border: 2px solid #b68834; border-left-color: transparent;}
+}
+
+
 body{ font-family: 'Poppins', sans-serif;}
 body p{ line-height: 1.625; font-weight: 300; font-size: 16px;}
 .nav-link{ color: #fff !important;}
@@ -84,7 +95,7 @@ footer input{ padding: 5px 10px; border: none; outline: none;}
 footer input:focus{ outline: none;}
 footer button{ padding: 5px 10px; background-color: #b68834; border: none;}
 footer .social i{ margin: 0 4px; padding: 0 2px 0 0; font-size: 18px}
-footer .social i:hover{ color: #b68834; cursor: pointer; transition: .4s; transform: translateY(2px);}
+footer .social i:hover{ color: #b68834; cursor: pointer; transition: .4s; transform: translateY(12px);}
 
 
 
