@@ -24,7 +24,7 @@ body:focus, body:focus-within{ background-color: transparent !important;}
 body{ font-family: 'Poppins', sans-serif;}
 body p{ line-height: 1.625; font-weight: 300; font-size: 16px;}
 .nav-link{ color: #fff !important;}
-.nav-item:hover .nav-link{ color: #b68834 !important; border-bottom: .1px solid;}
+.nav-item:hover .nav-link{ color: #b68834 !important; border-bottom: .1px solid; background-color: rgba(255,255,255,.8); border-radius: 10px; transition: .2s;}
 
 .wrap-heading{ font-size: 36px; color: #222222; line-height: 1.2; font-weight: 600;}
 .wrap-1{ background-image: url(../img/header-bg.jpg); height: 100vh; background-repeat: no-repeat; background-size: cover; background-position: center; color: #fff;}
@@ -45,10 +45,11 @@ body p{ line-height: 1.625; font-weight: 300; font-size: 16px;}
 
 
 .wrap-2 .video .play{ position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
-.wrap-2 .video-about{ padding: 40px 100px 0 40px;}
+.wrap-2 .video-about{ padding: 20px 100px 0 40px;}
 .wrap-2 .video-about h2{ font-size: 36px; color: #222222; line-height: 1.2; font-weight: 600;}
 .wrap-2 .video-about h6{ letter-spacing: 2px; color: #b68834; font-size: 12px; font-weight: 300;}
 .grey{ color: #777777; font-size: 14px;}
+.gold{ color: #b68834;}
 
 .wrap-3{ background-image: url(../img/menu-bg.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; padding: 100px 0;}
 .wrap-3 .card{ position: relative; border-radius: 10px;}
@@ -57,7 +58,8 @@ body p{ line-height: 1.625; font-weight: 300; font-size: 16px;}
 .wrap-3 .card .price{ position: absolute; right: 20px; top: 22px; color: #b68834 !important; font-size: 18px; font-weight: 600;}
 .coffee-name{ font-size: 18px; color: #222222; line-height: 1.2; font-weight: 600;}
 
-.wrap-4{ padding: 100px 0;}
+.wrap-4{ padding: 100px 0; background-image: url(../img/g-bg.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;}
+.wrap-4 .grid img{ height: 250px; width: 400px;}
 .wrap-4 .mfp-close:hover{ cursor: pointer !important;}
 .wrap-4 .grid-item:hover img{ animation: zoom-out .6s linear; transition: .4s; box-shadow: 3px 4px 10px #000;}
 
@@ -94,13 +96,13 @@ line-height: 1.2; font-weight: 600;}
 footer input{ padding: 5px 10px; border: none; outline: none;}
 footer input:focus{ outline: none;}
 footer button{ padding: 5px 10px; background-color: #b68834; border: none;}
-footer .social i{ margin: 0 4px; padding: 0 2px 0 0; font-size: 18px}
+footer .social i{ margin: 4px; padding: 0 2px 0 0; font-size: 18px}
 footer .social i:hover{ color: #b68834; cursor: pointer; transition: .4s; transform: translateY(12px);}
 
 
 
-
-
+.head-content{ font-size: 16px; line-height: 2.1; margin-top: 20px; font-weight: 400;}
+.bcontent{ line-height: 1.5; font-size: 15px; font-weight: 400;}
 
 
 
@@ -109,10 +111,6 @@ footer .social i:hover{ color: #b68834; cursor: pointer; transition: .4s; transf
 
 /*----------------------------responsive----------------------*/
 
-@media screen and (max-idth:1400px){
-    
-    .wrap-1 .section-1 h1{ margin-top: 200px;}
-}
 
 
 @media screen and (max-width:1220px){
@@ -121,7 +119,7 @@ footer .social i:hover{ color: #b68834; cursor: pointer; transition: .4s; transf
     .wrap-1 .section-1{ padding-top: 80px;}
     .wrap-1 .section-1 h1{ font-size: 52px; margin: 140px 0 20px;}
     
-    .wrap-2 .video-about h2{ font-size: 30px;}
+    .wrap-2 .video-about h2{ font-size: 30px; margin-bottom: 10px}
     .wrap-2 .video-about .quote{ font-size: 14px;}
     .wrap-2 .video-about{ padding: 20px 60px;}
 
@@ -142,8 +140,11 @@ footer .social i:hover{ color: #b68834; cursor: pointer; transition: .4s; transf
     #navbarSupportedContent li a:hover{ color: #b68834 !important; transform: scale(.95); background-color: rgba(255,255,255,.1);}
     
     .wrap-2 .video .play{ width: 10%;}
+     .wrap-2 .video-about .quote{ margin-bottom: 20px;}
+    .wrap-2 .video-about img{ margin-top: 20px;}
     
     .loader{ left: 48%;}
+    
 }
 
 
@@ -153,6 +154,7 @@ footer .social i:hover{ color: #b68834; cursor: pointer; transition: .4s; transf
     .navbar{ padding: 10px !important;}
     .wrap-heading{ font-size: 34px;}
     .wrap-5 .section-5 h2{ font-size: 34px;}
+   
 } 
 
 
@@ -160,11 +162,12 @@ footer .social i:hover{ color: #b68834; cursor: pointer; transition: .4s; transf
     
     #navbarSupportedContent{ padding: 10% 30%;}
     #navbarSupportedContent li a{ font-size: 15px; font-weight: 400;}
-    .wrap-1 .section-1{ padding-top: 180px;}
+    .wrap-1 .section-1{ padding-top: 250px;}
     .wrap-1 .section-1 h6{ font-size: 14px;}
     .wrap-1 .section-1 h1{ font-size: 36px; margin: 30px 0;}
     .wrap-4 img{ width: 100%;}
     footer .social i{ margin: 0 5px; padding: 4px; font-size: 20px;}
     
     .loader{ left: 45%;}
+    .just{ text-align: justify;}
 }
